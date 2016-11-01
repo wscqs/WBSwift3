@@ -9,6 +9,13 @@
 import UIKit
 
 extension UIButton {
+    
+    convenience init(imageName: String, backImageName: String) {
+        self.init()
+        setImage(UIImage(named: imageName), for: .normal)
+        setBackgroundImage(UIImage(named: backImageName), for: .normal)
+        sizeToFit()
+    }
 
     convenience init(x: CGFloat, iconName: NSString, target: AnyObject?, action: Selector, imageEdgeInsets: UIEdgeInsets){
         self.init()
