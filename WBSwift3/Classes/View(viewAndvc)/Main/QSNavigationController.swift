@@ -17,10 +17,28 @@ class QSNavigationController: UINavigationController {
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        // 主->子控制器  隐藏tabbar
         if childViewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
-        }        
+        }
+        
+        if let vc = viewController as? QSBaseViewController {
+            var backTitle = "返回"
+            if viewControllers.count == 1 {
+                backTitle = childViewControllers.first?.title ?? "返回"
+            }
+            
+            vc.navItem.leftBarButtonItem = UIBarButtonItem(title: backTitle, target: self, action: #selector(popToParent), isBack: true)
+        }
+        
+        
+        
+        
         super.pushViewController(viewController, animated: animated)
+    }
+    
+    func popToParent() {
+        popViewController(animated: true)
     }
 
 }

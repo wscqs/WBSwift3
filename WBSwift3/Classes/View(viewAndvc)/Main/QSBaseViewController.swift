@@ -36,5 +36,9 @@ extension QSBaseViewController{
         
         view.addSubview(navigationBar)
         navigationBar.items = [navItem]
+        
+        // 解决系统右边白色闪烁的bug
+        navigationBar.barTintColor = UIColor.colorWithHexString("F6F6F6")
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
     }
 }

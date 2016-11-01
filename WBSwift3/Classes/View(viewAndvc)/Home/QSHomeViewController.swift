@@ -23,6 +23,7 @@ class QSHomeViewController: QSBaseViewController {
 extension QSHomeViewController{
     override func setupUI() {
         super.setupUI()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFrends))
-    }
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showFrends))
+//        UIBarButtonItem(title: "好友", target: self, action: #selector(showFrends), isBack: true)
+        }
 }

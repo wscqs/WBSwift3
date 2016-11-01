@@ -28,6 +28,7 @@
 		47F389041DC8D9F300C31F29 /* QSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F388EE1DC8D9F300C31F29 /* QSNavigationController.swift */; };
 		47F389051DC8D9F300C31F29 /* QSMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F388F01DC8D9F300C31F29 /* QSMessageViewController.swift */; };
 		47F389061DC8D9F300C31F29 /* QSProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F388F21DC8D9F300C31F29 /* QSProfileViewController.swift */; };
+		47F389081DC9007200C31F29 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F389071DC9007200C31F29 /* UIBarButtonItem+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		47F388EE1DC8D9F300C31F29 /* QSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSNavigationController.swift; sourceTree = "<group>"; };
 		47F388F01DC8D9F300C31F29 /* QSMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSMessageViewController.swift; sourceTree = "<group>"; };
 		47F388F21DC8D9F300C31F29 /* QSProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSProfileViewController.swift; sourceTree = "<group>"; };
+		47F389071DC9007200C31F29 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		47F388D91DC8D9F300C31F29 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				47F389071DC9007200C31F29 /* UIBarButtonItem+Extensions.swift */,
 				47F388DA1DC8D9F300C31F29 /* Bundle+Extension.swift */,
 				47F388DB1DC8D9F300C31F29 /* Date+Extension.swift */,
 				47F388DC1DC8D9F300C31F29 /* String+Extension.swift */,
@@ -280,6 +283,7 @@
 				47F388F81DC8D9F300C31F29 /* UIColor+Extension.swift in Sources */,
 				47F388FB1DC8D9F300C31F29 /* UILabel+Extension.swift in Sources */,
 				47F389051DC8D9F300C31F29 /* QSMessageViewController.swift in Sources */,
+				47F389081DC9007200C31F29 /* UIBarButtonItem+Extensions.swift in Sources */,
 				47F388F51DC8D9F300C31F29 /* Date+Extension.swift in Sources */,
 				47F388FA1DC8D9F300C31F29 /* UIImageView+Extension.swift in Sources */,
 				47F388F91DC8D9F300C31F29 /* UIImage+Extension.swift in Sources */,
