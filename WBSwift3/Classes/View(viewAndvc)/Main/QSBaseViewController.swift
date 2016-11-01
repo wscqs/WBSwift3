@@ -9,27 +9,32 @@
 import UIKit
 
 class QSBaseViewController: UIViewController {
+    
+    lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64))
+    lazy var navItem = UINavigationItem()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override var title: String?{
+        didSet{
+            navItem.title = title
+        }
     }
+
+}
+
+extension QSBaseViewController{
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+     func setupUI() {
+        view.backgroundColor = UIColor.white
+        
+        // 取消自动缩进 - 如果隐藏了导航栏，会缩进 20 个点
+        automaticallyAdjustsScrollViewInsets = false
+        
+        view.addSubview(navigationBar)
+        navigationBar.items = [navItem]
     }
-    */
-
 }
