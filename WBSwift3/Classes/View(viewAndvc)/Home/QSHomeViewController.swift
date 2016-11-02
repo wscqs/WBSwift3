@@ -8,8 +8,18 @@
 
 import UIKit
 
+fileprivate let cellID = "cellID"
 class QSHomeViewController: QSBaseViewController {
-
+    
+    /// 微博数据数组
+    fileprivate lazy var statusList = [String]()
+    
+    override func loadData() {
+        for i in 0..<15 {
+            statusList.insert(i.description, at: 0)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,10 +30,24 @@ class QSHomeViewController: QSBaseViewController {
     }
 }
 
+extension QSHomeViewController {
+    override func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statusList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        cell.textLabel?.text = statusList[indexPath.row]
+        return cell
+    }
+    
+}
+
 extension QSHomeViewController{
     override func setupUI() {
         super.setupUI()
         navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showFrends))
-//        UIBarButtonItem(title: "好友", target: self, action: #selector(showFrends), isBack: true)
-        }
+        
+        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+    }
 }

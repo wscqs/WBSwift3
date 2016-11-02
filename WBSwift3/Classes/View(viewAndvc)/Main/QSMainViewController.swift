@@ -12,12 +12,16 @@ class QSMainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        view.backgroundColor = UIColor.blue
-        // Do any additional setup after loading the view.
         
         setupChildViewController()
         setupComposeButton()
+        
+    }
+ 
+    
+    /// 用代码控制方向: 好处-横屏的时候可以单独处理
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
     }
     
     // MARK: - 监听方法
