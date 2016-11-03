@@ -16,8 +16,15 @@ class QSHomeViewController: QSBaseViewController {
     
     override func loadData() {
         for i in 0..<15 {
-            statusList.insert(i.description, at: 0)
+            if isPullup {
+                statusList.append("上拉\(i)")
+            }else {
+                statusList.insert(i.description, at: 0)
+            }
         }
+        refreshController?.endRefreshing()
+        isPullup = false
+        tableView?.reloadData()
     }
     
     override func viewDidLoad() {

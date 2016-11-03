@@ -12,6 +12,10 @@ class QSBaseViewController: UIViewController {
     
     /// 表格视图: 如果用户未登录,就不创建
     var tableView: UITableView?
+    var refreshController: UIRefreshControl?
+    
+    /// 上拉刷新标记
+    var isPullup: Bool = false
     
     /// 导航栏
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64))
@@ -24,7 +28,10 @@ class QSBaseViewController: UIViewController {
     }
     
     /// 加载数据
-    func loadData(){}
+    func loadData(){
+        // 如果子类未实现,关闭刷新控件
+        refreshController?.endRefreshing()
+    }
 
     override var title: String?{
         didSet{
@@ -57,6 +64,10 @@ extension QSBaseViewController{
                                                left: 0,
                                                bottom: tabBarController?.tabBar.bounds.height ?? 49,
                                                right: 0)
+        
+        refreshController = UIRefreshControl()
+        tableView?.addSubview(refreshController!)
+        refreshController?.addTarget(self, action: #selector(loadData), for: .valueChanged)
     }
     
     /// 设置导航栏
@@ -77,5 +88,29 @@ extension QSBaseViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+    
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        /// 在最后一行做上拉刷新 (最大section,最后一行row)
+        let row = indexPath.row
+        let section = tableView.numberOfSections - 1
+        
+        if row < 0 || section < 0 {
+            return
+        }
+        
+        let count = tableView.numberOfRows(inSection: section)
+        
+        print(row,count)
+        if row == (count - 1) && !isPullup {
+            print("上拉刷新")
+            
+            isPullup = true
+            
+            loadData()
+        }
+        
     }
 }
