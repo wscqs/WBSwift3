@@ -41,17 +41,23 @@ class QSBaseViewController: UIViewController {
             navItem.title = title
         }
     }
+    
+    func login() {
+        
+    }
+    
+    func register() {
+        
+    }
 
 }
 
 extension QSBaseViewController{
     
-     func setupUI() {
+     fileprivate func setupUI() {
         view.backgroundColor = UIColor.white
-        
         // 取消自动缩进 - 如果隐藏了导航栏，会缩进 20 个点
         automaticallyAdjustsScrollViewInsets = false
-        
         setupNavigationBar()
         
         userLogon ? setupTableView() : setVisitorView()
@@ -61,11 +67,14 @@ extension QSBaseViewController{
     private func setVisitorView() {
         let visitorView = UIView(frame: view.bounds)
         visitorView.backgroundColor = UIColor.yellow
-        view.insertSubview(visitorView, belowSubview: navigationBar )
+        view.insertSubview(visitorView, belowSubview: navigationBar)
+        
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(register))
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(login))
     }
     
     /// 设置表格视图
-    private func setupTableView() {
+    func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
         view.insertSubview(tableView!, belowSubview: navigationBar)
         
@@ -87,9 +96,11 @@ extension QSBaseViewController{
         view.addSubview(navigationBar)
         navigationBar.items = [navItem]
         
-        // 解决系统右边白色闪烁的bug
+        // navBar整个背景颜色 ,解决系统右边白色闪烁的bug
         navigationBar.barTintColor = UIColor.colorWithHexString("F6F6F6")
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
+        // 系统文字渲染
+        navigationBar.tintColor = UIColor.orange
     }
 }
 
