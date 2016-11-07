@@ -10,6 +10,9 @@ import UIKit
 
 class QSBaseViewController: UIViewController {
     
+    /// 用户是否登录
+    var userLogon = false
+    
     /// 表格视图: 如果用户未登录,就不创建
     var tableView: UITableView?
     var refreshController: UIRefreshControl?
@@ -50,9 +53,18 @@ extension QSBaseViewController{
         automaticallyAdjustsScrollViewInsets = false
         
         setupNavigationBar()
-        setupTableView()
+        
+        userLogon ? setupTableView() : setVisitorView()
+        
     }
     
+    private func setVisitorView() {
+        let visitorView = UIView(frame: view.bounds)
+        visitorView.backgroundColor = UIColor.yellow
+        view.insertSubview(visitorView, belowSubview: navigationBar )
+    }
+    
+    /// 设置表格视图
     private func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
         view.insertSubview(tableView!, belowSubview: navigationBar)

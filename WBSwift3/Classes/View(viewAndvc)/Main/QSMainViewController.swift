@@ -53,16 +53,19 @@ extension QSMainViewController{
     
     /// 设置所有的子控制器
     fileprivate func setupChildViewController() {
-        let dicts = [
-            ["className":"QSHomeViewController","title":"首页","imageName":"home"],
-            ["className":"QSHomeViewController","title":"首页","imageName":""],
-            ["className":"","title":"","imageName":""],
-            ["className":"QSHomeViewController","title":"首页","imageName":""],
-            ["className":"QSHomeViewController","title":"首页","imageName":""]
-        ]
-        
+
+        var data = NSData(contentsOfFile: "main.json".docDir())
+        if data == nil {
+            let path = Bundle.main.path(forResource: "main.json", ofType: nil)
+            data = NSData(contentsOfFile: path!)
+        }
+        guard let array = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as? [[String: Any]]
+             else {
+            return
+        }
+           
         var arrayM = [UIViewController]()
-        for dict in dicts{
+        for dict in array!{
             arrayM.append(controller(With: dict))
         }
         
@@ -70,17 +73,16 @@ extension QSMainViewController{
         
     }
     
-    
     /// 使用字典创建控制器
     ///
     /// - parameter dict: [className,title,image]
     ///
     /// - returns: 子控制器
-    private func controller(With dict: [String: String]) -> UIViewController {
+    private func controller(With dict: [String: Any]) -> UIViewController {
         
-        guard let className = dict["className"],
-        let title = dict["title"],
-        let imageName = dict["imageName"],
+        guard let className = dict["clsName"] as? String,
+        let title = dict["title"] as? String,
+        let imageName = dict["imageName"] as? String,
         let cls = NSClassFromString(Bundle.main.namespace + "." + className) as? UIViewController.Type
              else {
                 return UIViewController()

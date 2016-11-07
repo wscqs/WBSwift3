@@ -20,12 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.backgroundColor = UIColor.yellow
         window?.rootViewController = QSMainViewController()
-        
         window?.makeKeyAndVisible()
+        
+        loadAppInfo()
         return true
     }
 
+}
 
-
+extension AppDelegate {
+    fileprivate func loadAppInfo() {
+        DispatchQueue.global().async {
+            let url = Bundle.main.url(forResource: "main.json", withExtension: nil)
+            let data = NSData(contentsOf: url!)
+            data?.write(toFile: "main.json".docDir(), atomically: true)
+            print("main.json".docDir())
+        }
+    }
 }
 

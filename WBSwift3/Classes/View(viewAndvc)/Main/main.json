@@ -1,6 +1,6 @@
 [
   {
-    "clsName" : "WBHomeViewController",
+    "clsName" : "QSHomeViewController",
     "title" : "首页",
     "visitorInfo" : {
       "imageName" : "",
@@ -9,7 +9,7 @@
     "imageName" : "home"
   },
   {
-    "clsName" : "WBMessageViewController",
+    "clsName" : "QSMessageViewController",
     "title" : "消息",
     "visitorInfo" : {
       "imageName" : "visitordiscover_image_message",
@@ -21,7 +21,7 @@
     "clsName" : "UIViewController"
   },
   {
-    "clsName" : "WBDiscoverViewController",
+    "clsName" : "QSDiscoverViewController",
     "title" : "发现",
     "visitorInfo" : {
       "imageName" : "visitordiscover_image_message",
@@ -30,7 +30,7 @@
     "imageName" : "discover"
   },
   {
-    "clsName" : "WBProfileViewController",
+    "clsName" : "QSProfileViewController",
     "title" : "我",
     "visitorInfo" : {
       "imageName" : "visitordiscover_image_profile",

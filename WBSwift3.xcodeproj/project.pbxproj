@@ -72,6 +72,7 @@
 		4733343F1DCA430600A010B9 /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				47F388EB1DC8D9F300C31F29 /* main.json */,
 				47F388ED1DC8D9F300C31F29 /* QSMainViewController.swift */,
 				47F388EE1DC8D9F300C31F29 /* QSNavigationController.swift */,
 			);
@@ -181,7 +182,6 @@
 		47F388EA1DC8D9F300C31F29 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				47F388EB1DC8D9F300C31F29 /* main.json */,
 				47F388EC1DC8D9F300C31F29 /* QSBaseViewController.swift */,
 				4733343F1DCA430600A010B9 /* 主控制器 */,
 			);
