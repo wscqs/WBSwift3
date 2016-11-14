@@ -42,8 +42,12 @@ class QSBaseViewController: UIViewController {
         }
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     func login() {
-        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: WBUserShouldLoginNotification), object: nil)
     }
     
     func register() {

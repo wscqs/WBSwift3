@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470AD8741DD6BCCD00572395 /* WeiBoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AD8731DD6BCCD00572395 /* WeiBoCommon.swift */; };
+		470AD8771DD6BD4B00572395 /* WBOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AD8761DD6BD4B00572395 /* WBOAuthViewController.swift */; };
+		473EC5DE1DDA17F300D59C03 /* WBUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5DB1DDA17F300D59C03 /* WBUserAccount.swift */; };
+		473EC5DF1DDA17F300D59C03 /* WBNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5DC1DDA17F300D59C03 /* WBNetworkManager+Extension.swift */; };
+		473EC5E01DDA17F300D59C03 /* WBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5DD1DDA17F300D59C03 /* WBNetworkManager.swift */; };
+		473EC5FB1DDA193F00D59C03 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5E41DDA193F00D59C03 /* NSArray+Log.m */; };
+		473EC5FC1DDA193F00D59C03 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5E61DDA193F00D59C03 /* NSAttributedString+CZAdditon.m */; };
+		473EC5FD1DDA193F00D59C03 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5E81DDA193F00D59C03 /* NSObject+CZRuntime.m */; };
+		473EC5FE1DDA193F00D59C03 /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5EA1DDA193F00D59C03 /* NSString+CZBase64.m */; };
+		473EC5FF1DDA193F00D59C03 /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5EC1DDA193F00D59C03 /* NSString+CZHash.m */; };
+		473EC6001DDA193F00D59C03 /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5EE1DDA193F00D59C03 /* NSString+CZPath.m */; };
+		473EC6011DDA193F00D59C03 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5F01DDA193F00D59C03 /* UIButton+CZAddition.m */; };
+		473EC6021DDA193F00D59C03 /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5F21DDA193F00D59C03 /* UIColor+CZAddition.m */; };
+		473EC6031DDA193F00D59C03 /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5F41DDA193F00D59C03 /* UILabel+CZAddition.m */; };
+		473EC6041DDA193F00D59C03 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5F61DDA193F00D59C03 /* UIScreen+CZAddition.m */; };
+		473EC6051DDA193F00D59C03 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5F81DDA193F00D59C03 /* UIView+CZAddition.m */; };
+		473EC6061DDA193F00D59C03 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 473EC5FA1DDA193F00D59C03 /* UIViewController+CZAddition.m */; };
 		47F388C51DC8D8C600C31F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F388C41DC8D8C600C31F29 /* AppDelegate.swift */; };
 		47F388CC1DC8D8C600C31F29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F388CB1DC8D8C600C31F29 /* Assets.xcassets */; };
 		47F388F41DC8D9F300C31F29 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F388DA1DC8D9F300C31F29 /* Bundle+Extension.swift */; };
@@ -29,9 +46,41 @@
 		47F389051DC8D9F300C31F29 /* QSMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F388F01DC8D9F300C31F29 /* QSMessageViewController.swift */; };
 		47F389061DC8D9F300C31F29 /* QSProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F388F21DC8D9F300C31F29 /* QSProfileViewController.swift */; };
 		47F389081DC9007200C31F29 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F389071DC9007200C31F29 /* UIBarButtonItem+Extensions.swift */; };
+		A2BFC5B9C1158D8E0F4E69DA /* Pods_WBSwift3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF8E082EA7BC093355E0698 /* Pods_WBSwift3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		470AD8731DD6BCCD00572395 /* WeiBoCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoCommon.swift; sourceTree = "<group>"; };
+		470AD8761DD6BD4B00572395 /* WBOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBOAuthViewController.swift; sourceTree = "<group>"; };
+		473EC5DB1DDA17F300D59C03 /* WBUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUserAccount.swift; sourceTree = "<group>"; };
+		473EC5DC1DDA17F300D59C03 /* WBNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WBNetworkManager+Extension.swift"; sourceTree = "<group>"; };
+		473EC5DD1DDA17F300D59C03 /* WBNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNetworkManager.swift; sourceTree = "<group>"; };
+		473EC5E21DDA193F00D59C03 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		473EC5E31DDA193F00D59C03 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		473EC5E41DDA193F00D59C03 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		473EC5E51DDA193F00D59C03 /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		473EC5E61DDA193F00D59C03 /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		473EC5E71DDA193F00D59C03 /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		473EC5E81DDA193F00D59C03 /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		473EC5E91DDA193F00D59C03 /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		473EC5EA1DDA193F00D59C03 /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		473EC5EB1DDA193F00D59C03 /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		473EC5EC1DDA193F00D59C03 /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		473EC5ED1DDA193F00D59C03 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		473EC5EE1DDA193F00D59C03 /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		473EC5EF1DDA193F00D59C03 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		473EC5F01DDA193F00D59C03 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		473EC5F11DDA193F00D59C03 /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		473EC5F21DDA193F00D59C03 /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		473EC5F31DDA193F00D59C03 /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		473EC5F41DDA193F00D59C03 /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		473EC5F51DDA193F00D59C03 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		473EC5F61DDA193F00D59C03 /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		473EC5F71DDA193F00D59C03 /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		473EC5F81DDA193F00D59C03 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		473EC5F91DDA193F00D59C03 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		473EC5FA1DDA193F00D59C03 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		473EC6101DDA19DC00D59C03 /* Weibo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weibo-Bridge.h"; sourceTree = "<group>"; };
 		47F388C11DC8D8C600C31F29 /* WBSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F388C41DC8D8C600C31F29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F388CB1DC8D8C600C31F29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +105,9 @@
 		47F388F01DC8D9F300C31F29 /* QSMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSMessageViewController.swift; sourceTree = "<group>"; };
 		47F388F21DC8D9F300C31F29 /* QSProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSProfileViewController.swift; sourceTree = "<group>"; };
 		47F389071DC9007200C31F29 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		5CF8E082EA7BC093355E0698 /* Pods_WBSwift3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBSwift3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C5F07FCBD2656CED2F05467 /* Pods-WBSwift3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBSwift3.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBSwift3/Pods-WBSwift3.release.xcconfig"; sourceTree = "<group>"; };
+		B1238F8971930C5D93C9F015 /* Pods-WBSwift3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBSwift3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBSwift3/Pods-WBSwift3.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +115,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BFC5B9C1158D8E0F4E69DA /* Pods_WBSwift3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		470AD8751DD6BD4B00572395 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				470AD8761DD6BD4B00572395 /* WBOAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		4733343F1DCA430600A010B9 /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +140,63 @@
 			name = "主控制器";
 			sourceTree = "<group>";
 		};
+		473EC5D91DDA17F300D59C03 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				473EC5DA1DDA17F300D59C03 /* Model */,
+				473EC5DC1DDA17F300D59C03 /* WBNetworkManager+Extension.swift */,
+				473EC5DD1DDA17F300D59C03 /* WBNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		473EC5DA1DDA17F300D59C03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				473EC5DB1DDA17F300D59C03 /* WBUserAccount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		473EC5E11DDA193F00D59C03 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				473EC5E21DDA193F00D59C03 /* CZAdditions.h */,
+				473EC5E31DDA193F00D59C03 /* NSArray+Log.h */,
+				473EC5E41DDA193F00D59C03 /* NSArray+Log.m */,
+				473EC5E51DDA193F00D59C03 /* NSAttributedString+CZAdditon.h */,
+				473EC5E61DDA193F00D59C03 /* NSAttributedString+CZAdditon.m */,
+				473EC5E71DDA193F00D59C03 /* NSObject+CZRuntime.h */,
+				473EC5E81DDA193F00D59C03 /* NSObject+CZRuntime.m */,
+				473EC5E91DDA193F00D59C03 /* NSString+CZBase64.h */,
+				473EC5EA1DDA193F00D59C03 /* NSString+CZBase64.m */,
+				473EC5EB1DDA193F00D59C03 /* NSString+CZHash.h */,
+				473EC5EC1DDA193F00D59C03 /* NSString+CZHash.m */,
+				473EC5ED1DDA193F00D59C03 /* NSString+CZPath.h */,
+				473EC5EE1DDA193F00D59C03 /* NSString+CZPath.m */,
+				473EC5EF1DDA193F00D59C03 /* UIButton+CZAddition.h */,
+				473EC5F01DDA193F00D59C03 /* UIButton+CZAddition.m */,
+				473EC5F11DDA193F00D59C03 /* UIColor+CZAddition.h */,
+				473EC5F21DDA193F00D59C03 /* UIColor+CZAddition.m */,
+				473EC5F31DDA193F00D59C03 /* UILabel+CZAddition.h */,
+				473EC5F41DDA193F00D59C03 /* UILabel+CZAddition.m */,
+				473EC5F51DDA193F00D59C03 /* UIScreen+CZAddition.h */,
+				473EC5F61DDA193F00D59C03 /* UIScreen+CZAddition.m */,
+				473EC5F71DDA193F00D59C03 /* UIView+CZAddition.h */,
+				473EC5F81DDA193F00D59C03 /* UIView+CZAddition.m */,
+				473EC5F91DDA193F00D59C03 /* UIViewController+CZAddition.h */,
+				473EC5FA1DDA193F00D59C03 /* UIViewController+CZAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
 		47F388B81DC8D8C600C31F29 = {
 			isa = PBXGroup;
 			children = (
 				47F388C31DC8D8C600C31F29 /* WBSwift3 */,
 				47F388C21DC8D8C600C31F29 /* Products */,
+				B054BDCFE4ECFF634718BD74 /* Pods */,
+				CD5077A9DEA065033517BE99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +213,7 @@
 			children = (
 				47F388D61DC8D9F300C31F29 /* Classes */,
 				47F388C41DC8D8C600C31F29 /* AppDelegate.swift */,
+				473EC6101DDA19DC00D59C03 /* Weibo-Bridge.h */,
 				47F388CB1DC8D8C600C31F29 /* Assets.xcassets */,
 				47F388D01DC8D8C600C31F29 /* Info.plist */,
 			);
@@ -127,6 +241,9 @@
 		47F388D81DC8D9F300C31F29 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				473EC5E11DDA193F00D59C03 /* Additions */,
+				470AD8731DD6BCCD00572395 /* WeiBoCommon.swift */,
+				473EC5D91DDA17F300D59C03 /* Network */,
 				47F388D91DC8D9F300C31F29 /* Extension */,
 			);
 			path = Tool;
@@ -182,6 +299,7 @@
 		47F388EA1DC8D9F300C31F29 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				470AD8751DD6BD4B00572395 /* OAuth */,
 				47F388EC1DC8D9F300C31F29 /* QSBaseViewController.swift */,
 				4733343F1DCA430600A010B9 /* 主控制器 */,
 			);
@@ -211,6 +329,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		B054BDCFE4ECFF634718BD74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1238F8971930C5D93C9F015 /* Pods-WBSwift3.debug.xcconfig */,
+				8C5F07FCBD2656CED2F05467 /* Pods-WBSwift3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD5077A9DEA065033517BE99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CF8E082EA7BC093355E0698 /* Pods_WBSwift3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +353,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47F388D31DC8D8C600C31F29 /* Build configuration list for PBXNativeTarget "WBSwift3" */;
 			buildPhases = (
+				A048EB82F6869CB837FCBFA1 /* [CP] Check Pods Manifest.lock */,
 				47F388BD1DC8D8C600C31F29 /* Sources */,
 				47F388BE1DC8D8C600C31F29 /* Frameworks */,
 				47F388BF1DC8D8C600C31F29 /* Resources */,
+				EA8C652F9D04DC264BE0AC0F /* [CP] Embed Pods Frameworks */,
+				29F746C668D2F83C060CD5B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +416,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29F746C668D2F83C060CD5B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WBSwift3/Pods-WBSwift3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A048EB82F6869CB837FCBFA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA8C652F9D04DC264BE0AC0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WBSwift3/Pods-WBSwift3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47F388BD1DC8D8C600C31F29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -286,23 +472,40 @@
 				47F389031DC8D9F300C31F29 /* QSMainViewController.swift in Sources */,
 				47F388FD1DC8D9F300C31F29 /* UISegmentedControl+Extension.swift in Sources */,
 				47F388FE1DC8D9F300C31F29 /* UIView+Extension.swift in Sources */,
+				473EC6031DDA193F00D59C03 /* UILabel+CZAddition.m in Sources */,
 				47F388FC1DC8D9F300C31F29 /* UISearchBar+Extension.swift in Sources */,
 				47F389021DC8D9F300C31F29 /* QSBaseViewController.swift in Sources */,
+				473EC5FC1DDA193F00D59C03 /* NSAttributedString+CZAdditon.m in Sources */,
 				47F388F81DC8D9F300C31F29 /* UIColor+Extension.swift in Sources */,
 				47F388FB1DC8D9F300C31F29 /* UILabel+Extension.swift in Sources */,
+				473EC5FB1DDA193F00D59C03 /* NSArray+Log.m in Sources */,
+				470AD8741DD6BCCD00572395 /* WeiBoCommon.swift in Sources */,
 				47F389051DC8D9F300C31F29 /* QSMessageViewController.swift in Sources */,
 				47F389081DC9007200C31F29 /* UIBarButtonItem+Extensions.swift in Sources */,
+				473EC5DF1DDA17F300D59C03 /* WBNetworkManager+Extension.swift in Sources */,
+				473EC6061DDA193F00D59C03 /* UIViewController+CZAddition.m in Sources */,
 				47F388F51DC8D9F300C31F29 /* Date+Extension.swift in Sources */,
+				473EC6051DDA193F00D59C03 /* UIView+CZAddition.m in Sources */,
 				47F388FA1DC8D9F300C31F29 /* UIImageView+Extension.swift in Sources */,
+				473EC5E01DDA17F300D59C03 /* WBNetworkManager.swift in Sources */,
+				473EC5DE1DDA17F300D59C03 /* WBUserAccount.swift in Sources */,
 				47F388F91DC8D9F300C31F29 /* UIImage+Extension.swift in Sources */,
 				47F389061DC8D9F300C31F29 /* QSProfileViewController.swift in Sources */,
 				47F388F41DC8D9F300C31F29 /* Bundle+Extension.swift in Sources */,
 				47F389001DC8D9F300C31F29 /* QSHomeViewController.swift in Sources */,
 				47F389041DC8D9F300C31F29 /* QSNavigationController.swift in Sources */,
+				473EC5FF1DDA193F00D59C03 /* NSString+CZHash.m in Sources */,
 				47F388F61DC8D9F300C31F29 /* String+Extension.swift in Sources */,
+				473EC6041DDA193F00D59C03 /* UIScreen+CZAddition.m in Sources */,
+				473EC5FD1DDA193F00D59C03 /* NSObject+CZRuntime.m in Sources */,
+				473EC5FE1DDA193F00D59C03 /* NSString+CZBase64.m in Sources */,
 				47F388C51DC8D8C600C31F29 /* AppDelegate.swift in Sources */,
 				47F388F71DC8D9F300C31F29 /* UIButton+Extension.swift in Sources */,
+				473EC6001DDA193F00D59C03 /* NSString+CZPath.m in Sources */,
+				473EC6021DDA193F00D59C03 /* UIColor+CZAddition.m in Sources */,
 				47F388FF1DC8D9F300C31F29 /* QSDiscoverViewController.swift in Sources */,
+				473EC6011DDA193F00D59C03 /* UIButton+CZAddition.m in Sources */,
+				470AD8771DD6BD4B00572395 /* WBOAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +607,7 @@
 		};
 		47F388D41DC8D8C600C31F29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1238F8971930C5D93C9F015 /* Pods-WBSwift3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -414,12 +618,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cqs.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WBSwift3/Weibo-Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		47F388D51DC8D8C600C31F29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C5F07FCBD2656CED2F05467 /* Pods-WBSwift3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -430,6 +636,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cqs.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WBSwift3/Weibo-Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
